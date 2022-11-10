@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+
+    --Blue: hsl(248, 32%, 49%);
+
+    --DarkBlue: hsl(249, 10%, 26%);
+    --GrayishBlue: hsl(246, 25%, 77%);
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+html,
+body {
+    height:auto;
+    max-width: min(1280px, 100%)
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/images/bg-intro-mobile.png);
+    background-color: var(--Red);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Poppins';
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:50px 25px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size:32px;
+    font-weight: 600;
+    margin-bottom:25px;
+    text-align: center;
+}
+
+.text p {
+    text-align: center;
+    width:90%;
+    line-height: 1.8;
+    margin-bottom:50px;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    color: white;
+    text-decoration: none;
+    padding:20px 120px;
+    background-color: var(--Blue);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 0 0px rgba(81, 81, 81, 0.234);
+    width: 100%;
+    margin-bottom:25px;
+}
+
+.btn span {
+    font-weight: 600;
+}
+
+form {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding:20px 20px;
+    box-shadow: 0 8px 0 0px rgba(81, 81, 81, 0.234)
+}
+
+.inp {
+    padding:10px;
+    margin-bottom:10px;
+    border:1px solid rgba(128, 128, 128, 0.323);
+    border-radius:5px;
+    width:100%;
+}
+
+.test {
+    position:relative;
+    width:100%;
+}
+
+.inp:focus {
+    outline: none !important;
+    border:1px solid var(--Blue);
+}
+
+.danger-button1 {
+    width:25px;
+    position:absolute;
+    right:5%;
+    top:10%;
+    opacity: 0;
+}
+
+.danger-button2 {
+    width:25px;
+    position:absolute;
+    right:5%;
+    top:10%;
+    opacity: 0;
+}
+
+.danger-button3 {
+    width:25px;
+    position:absolute;
+    right:5%;
+    top:10%;
+    opacity: 0;
+}
+
+.danger-button4 {
+    width:25px;
+    position:absolute;
+    right:5%;
+    top:10%;
+    opacity: 0;
+}
+
+
+form input::placeholder {
+    padding:10px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size:14px;
+}
+
+.para1 {
+    color:var(--Red);
+    font-size:10px;
+    align-self: flex-end;
+    margin-bottom:10px;
+    display: none;
+}
+.para2 {
+    color:var(--Red);
+    font-size:10px;
+    align-self: flex-end;
+    margin-bottom:10px;
+    display: none;
+}
+.para3 {
+    color:var(--Red);
+    font-size:10px;
+    align-self: flex-end;
+    margin-bottom:10px;
+    display: none;
+}
+.para4 {
+    color:var(--Red);
+    font-size:10px;
+    align-self: flex-end;
+    margin-bottom:10px;
+    display: none;
+}
+
+.btn-submit {
+    width:100%;
+    padding:15px;
+    background-color: var(--Green);
+    border: none;
+    border-radius:5px;
+    color:white;
+    font-weight: 400;
+    font-size:18px;
+    box-shadow: 0 3px 0 0px hsl(154, 61%, 45%);
+    cursor: pointer;
+    margin-bottom:10px;
+}
+
+form p {
+    color: var(--GrayishBlue);
+    font-size:12px;
+    width:65%;
+    text-align: center;
+    align-self: center;
+    font-weight: 400;
+}
+
+form p a {
+    color:var(--Red);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media(min-width:1080px) {
+
+    body {
+        max-width:100%;
+        background: url(/images/bg-intro-desktop.png);
+        background-color: var(--Red);
+    }
+    .box-container {
+        flex-direction: row;
+    }
+
+    .btn {
+        padding: 10px;
+    }
+
+    .text {
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding:180px 150px;
+    }
+
+    h1 {
+        text-align: left;
+        font-size:48px;
+        line-height: 1.2;
+    }
+
+
+
+    .text p {
+        text-align: left;
+        font-size: 14px;
+        width:100%;
+    }
+
+    form {
+        width:100%;
+    }
+
+    .form-div {
+        width:90%;
+    }
+}

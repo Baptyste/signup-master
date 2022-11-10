@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+<div class="box-container">
+  <div class="text">
+    <h1>Learn to code by <br> watching others</h1>
+    <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable. </p>
+  </div>
+  <div class="form-div">
+    <a href="#" class="btn"><span>Try it free 7 days</span> then $20/mo. thereafter</a>
+    <form action="" name="myForm" class="form" novalidate>
+      <div class="test">
+        <input type="name" name="question" placeholder="First Name" class="inp" id="prename"><img src="/images/icon-error.svg" alt="" class="danger-button1">
+        <span class="para1">First name cannot be empty</span>
+      </div>
+      <div class="test">
+        <input type="name" name="question" placeholder="Last Name" class="inp" id="lastname"><img src="/images/icon-error.svg" alt="" class="danger-button2">
+        <span class="para2">Last name cannot be empty</span>
+      </div>
+      <div class="test">
+        <input type="email" placeholder="Email Address" class="inp" id="email"><img src="/images/icon-error.svg" alt="" class="danger-button3">
+        <span class="para3">Looks like this is not email</span>
+      </div>
+      <div class="test">
+        <input type="password" name="question" placeholder="Password" class="inp" id="password"><img src="/images/icon-error.svg" alt="" class="danger-button4">
+        <span class="para4">Password cannot be empty</span>
+      </div>
+      <input type="submit" class="btn-submit" value="CLAIM YOUR FREE TRIAL">
+      <p>By clicking the button, you are agreeing to our <a href="">Terms and Services</a></p>
+    </form>
+  </div>
+</div>
+<script src="/main.js"></script>
+</body>
+</html>
